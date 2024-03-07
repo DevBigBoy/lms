@@ -1,14 +1,16 @@
 <header>
     <div class="topbar d-flex align-items-center">
         <nav class="navbar navbar-expand gap-3">
-            <div class="mobile-toggle-menu"><i class='bx bx-menu'></i>
+            <div class="mobile-toggle-menu">
+                <i class='bx bx-menu'></i>
             </div>
 
             <div class="position-relative search-bar d-lg-block d-none" data-bs-toggle="modal"
                 data-bs-target="#SearchModal">
                 <input class="form-control px-5" disabled type="search" placeholder="Search">
-                <span class="position-absolute top-50 search-show ms-3 translate-middle-y start-0 top-50 fs-5"><i
-                        class='bx bx-search'></i></span>
+                <span class="position-absolute top-50 search-show ms-3 translate-middle-y start-0 top-50 fs-5">
+                    <i class='bx bx-search'></i>
+                </span>
             </div>
 
 
@@ -16,305 +18,29 @@
                 <ul class="navbar-nav align-items-center gap-1">
                     <li class="nav-item mobile-search-icon d-flex d-lg-none" data-bs-toggle="modal"
                         data-bs-target="#SearchModal">
-                        <a class="nav-link" href="avascript:;"><i class='bx bx-search'></i>
+                        <a class="nav-link" href="avascript:;">
+                            <i class='bx bx-search'></i>
                         </a>
                     </li>
+
                     <li class="nav-item dropdown dropdown-laungauge d-none d-sm-flex">
                         <a class="nav-link dropdown-toggle dropdown-toggle-nocaret" href="avascript:;"
                             data-bs-toggle="dropdown"><img src="assets/images/county/02.png" width="22"
                                 alt="">
                         </a>
-                        <ul class="dropdown-menu dropdown-menu-end">
-                            <li><a class="dropdown-item d-flex align-items-center py-2" href="javascript:;"><img
-                                        src="assets/images/county/01.png" width="20" alt=""><span
-                                        class="ms-2">English</span></a>
-                            </li>
-                            <li><a class="dropdown-item d-flex align-items-center py-2" href="javascript:;"><img
-                                        src="assets/images/county/02.png" width="20" alt=""><span
-                                        class="ms-2">Catalan</span></a>
-                            </li>
-                            <li><a class="dropdown-item d-flex align-items-center py-2" href="javascript:;"><img
-                                        src="assets/images/county/03.png" width="20" alt=""><span
-                                        class="ms-2">French</span></a>
-                            </li>
-                            <li><a class="dropdown-item d-flex align-items-center py-2" href="javascript:;"><img
-                                        src="assets/images/county/04.png" width="20" alt=""><span
-                                        class="ms-2">Belize</span></a>
-                            </li>
-                            <li><a class="dropdown-item d-flex align-items-center py-2" href="javascript:;"><img
-                                        src="assets/images/county/05.png" width="20" alt=""><span
-                                        class="ms-2">Colombia</span></a>
-                            </li>
-                            <li><a class="dropdown-item d-flex align-items-center py-2" href="javascript:;"><img
-                                        src="assets/images/county/06.png" width="20" alt=""><span
-                                        class="ms-2">Spanish</span></a>
-                            </li>
-                            <li><a class="dropdown-item d-flex align-items-center py-2" href="javascript:;"><img
-                                        src="assets/images/county/07.png" width="20" alt=""><span
-                                        class="ms-2">Georgian</span></a>
-                            </li>
-                            <li><a class="dropdown-item d-flex align-items-center py-2" href="javascript:;"><img
-                                        src="assets/images/county/08.png" width="20" alt=""><span
-                                        class="ms-2">Hindi</span></a>
-                            </li>
-                        </ul>
+
                     </li>
+
                     <li class="nav-item dark-mode d-none d-sm-flex">
                         <a class="nav-link dark-mode-icon" href="javascript:;"><i class='bx bx-moon'></i>
                         </a>
                     </li>
 
-                    <li class="nav-item dropdown dropdown-app">
-                        <a class="nav-link dropdown-toggle dropdown-toggle-nocaret" data-bs-toggle="dropdown"
-                            href="javascript:;"><i class='bx bx-grid-alt'></i></a>
-                        <div class="dropdown-menu dropdown-menu-end p-0">
-                            <div class="app-container p-2 my-2">
-                                <div class="row gx-0 gy-2 row-cols-3 justify-content-center p-2">
-                                    <div class="col">
-                                        <a href="javascript:;">
-                                            <div class="app-box text-center">
-                                                <div class="app-icon">
-                                                    <img src="assets/images/app/slack.png" width="30"
-                                                        alt="">
-                                                </div>
-                                                <div class="app-name">
-                                                    <p class="mb-0 mt-1">Slack</p>
-                                                </div>
-                                            </div>
-                                        </a>
-                                    </div>
-                                    <div class="col">
-                                        <a href="javascript:;">
-                                            <div class="app-box text-center">
-                                                <div class="app-icon">
-                                                    <img src="assets/images/app/behance.png" width="30"
-                                                        alt="">
-                                                </div>
-                                                <div class="app-name">
-                                                    <p class="mb-0 mt-1">Behance</p>
-                                                </div>
-                                            </div>
-                                        </a>
-                                    </div>
-                                    <div class="col">
-                                        <a href="javascript:;">
-                                            <div class="app-box text-center">
-                                                <div class="app-icon">
-                                                    <img src="assets/images/app/google-drive.png" width="30"
-                                                        alt="">
-                                                </div>
-                                                <div class="app-name">
-                                                    <p class="mb-0 mt-1">Dribble</p>
-                                                </div>
-                                            </div>
-                                        </a>
-                                    </div>
-                                    <div class="col">
-                                        <a href="javascript:;">
-                                            <div class="app-box text-center">
-                                                <div class="app-icon">
-                                                    <img src="assets/images/app/outlook.png" width="30"
-                                                        alt="">
-                                                </div>
-                                                <div class="app-name">
-                                                    <p class="mb-0 mt-1">Outlook</p>
-                                                </div>
-                                            </div>
-                                        </a>
-                                    </div>
-                                    <div class="col">
-                                        <a href="javascript:;">
-                                            <div class="app-box text-center">
-                                                <div class="app-icon">
-                                                    <img src="assets/images/app/github.png" width="30"
-                                                        alt="">
-                                                </div>
-                                                <div class="app-name">
-                                                    <p class="mb-0 mt-1">GitHub</p>
-                                                </div>
-                                            </div>
-                                        </a>
-                                    </div>
-                                    <div class="col">
-                                        <a href="javascript:;">
-                                            <div class="app-box text-center">
-                                                <div class="app-icon">
-                                                    <img src="assets/images/app/stack-overflow.png" width="30"
-                                                        alt="">
-                                                </div>
-                                                <div class="app-name">
-                                                    <p class="mb-0 mt-1">Stack</p>
-                                                </div>
-                                            </div>
-                                        </a>
-                                    </div>
-                                    <div class="col">
-                                        <a href="javascript:;">
-                                            <div class="app-box text-center">
-                                                <div class="app-icon">
-                                                    <img src="assets/images/app/figma.png" width="30"
-                                                        alt="">
-                                                </div>
-                                                <div class="app-name">
-                                                    <p class="mb-0 mt-1">Stack</p>
-                                                </div>
-                                            </div>
-                                        </a>
-                                    </div>
-                                    <div class="col">
-                                        <a href="javascript:;">
-                                            <div class="app-box text-center">
-                                                <div class="app-icon">
-                                                    <img src="assets/images/app/twitter.png" width="30"
-                                                        alt="">
-                                                </div>
-                                                <div class="app-name">
-                                                    <p class="mb-0 mt-1">Twitter</p>
-                                                </div>
-                                            </div>
-                                        </a>
-                                    </div>
-                                    <div class="col">
-                                        <a href="javascript:;">
-                                            <div class="app-box text-center">
-                                                <div class="app-icon">
-                                                    <img src="assets/images/app/google-calendar.png" width="30"
-                                                        alt="">
-                                                </div>
-                                                <div class="app-name">
-                                                    <p class="mb-0 mt-1">Calendar</p>
-                                                </div>
-                                            </div>
-                                        </a>
-                                    </div>
-                                    <div class="col">
-                                        <a href="javascript:;">
-                                            <div class="app-box text-center">
-                                                <div class="app-icon">
-                                                    <img src="assets/images/app/spotify.png" width="30"
-                                                        alt="">
-                                                </div>
-                                                <div class="app-name">
-                                                    <p class="mb-0 mt-1">Spotify</p>
-                                                </div>
-                                            </div>
-                                        </a>
-                                    </div>
-                                    <div class="col">
-                                        <a href="javascript:;">
-                                            <div class="app-box text-center">
-                                                <div class="app-icon">
-                                                    <img src="assets/images/app/google-photos.png" width="30"
-                                                        alt="">
-                                                </div>
-                                                <div class="app-name">
-                                                    <p class="mb-0 mt-1">Photos</p>
-                                                </div>
-                                            </div>
-                                        </a>
-                                    </div>
-                                    <div class="col">
-                                        <a href="javascript:;">
-                                            <div class="app-box text-center">
-                                                <div class="app-icon">
-                                                    <img src="assets/images/app/pinterest.png" width="30"
-                                                        alt="">
-                                                </div>
-                                                <div class="app-name">
-                                                    <p class="mb-0 mt-1">Photos</p>
-                                                </div>
-                                            </div>
-                                        </a>
-                                    </div>
-                                    <div class="col">
-                                        <a href="javascript:;">
-                                            <div class="app-box text-center">
-                                                <div class="app-icon">
-                                                    <img src="assets/images/app/linkedin.png" width="30"
-                                                        alt="">
-                                                </div>
-                                                <div class="app-name">
-                                                    <p class="mb-0 mt-1">linkedin</p>
-                                                </div>
-                                            </div>
-                                        </a>
-                                    </div>
-                                    <div class="col">
-                                        <a href="javascript:;">
-                                            <div class="app-box text-center">
-                                                <div class="app-icon">
-                                                    <img src="assets/images/app/dribble.png" width="30"
-                                                        alt="">
-                                                </div>
-                                                <div class="app-name">
-                                                    <p class="mb-0 mt-1">Dribble</p>
-                                                </div>
-                                            </div>
-                                        </a>
-                                    </div>
-                                    <div class="col">
-                                        <a href="javascript:;">
-                                            <div class="app-box text-center">
-                                                <div class="app-icon">
-                                                    <img src="assets/images/app/youtube.png" width="30"
-                                                        alt="">
-                                                </div>
-                                                <div class="app-name">
-                                                    <p class="mb-0 mt-1">YouTube</p>
-                                                </div>
-                                            </div>
-                                        </a>
-                                    </div>
-                                    <div class="col">
-                                        <a href="javascript:;">
-                                            <div class="app-box text-center">
-                                                <div class="app-icon">
-                                                    <img src="assets/images/app/google.png" width="30"
-                                                        alt="">
-                                                </div>
-                                                <div class="app-name">
-                                                    <p class="mb-0 mt-1">News</p>
-                                                </div>
-                                            </div>
-                                        </a>
-                                    </div>
-                                    <div class="col">
-                                        <a href="javascript:;">
-                                            <div class="app-box text-center">
-                                                <div class="app-icon">
-                                                    <img src="assets/images/app/envato.png" width="30"
-                                                        alt="">
-                                                </div>
-                                                <div class="app-name">
-                                                    <p class="mb-0 mt-1">Envato</p>
-                                                </div>
-                                            </div>
-                                        </a>
-                                    </div>
-                                    <div class="col">
-                                        <a href="javascript:;">
-                                            <div class="app-box text-center">
-                                                <div class="app-icon">
-                                                    <img src="assets/images/app/safari.png" width="30"
-                                                        alt="">
-                                                </div>
-                                                <div class="app-name">
-                                                    <p class="mb-0 mt-1">Safari</p>
-                                                </div>
-                                            </div>
-                                        </a>
-                                    </div>
-
-                                </div><!--end row-->
-
-                            </div>
-                        </div>
-                    </li>
 
                     <li class="nav-item dropdown dropdown-large">
                         <a class="nav-link dropdown-toggle dropdown-toggle-nocaret position-relative" href="#"
-                            data-bs-toggle="dropdown"><span class="alert-count">7</span>
-                            <i class='bx bx-bell'></i>
+                            data-bs-toggle="dropdown">
+                            <span class="alert-count">7</span> <i class='bx bx-bell'></i>
                         </a>
                         <div class="dropdown-menu dropdown-menu-end">
                             <a href="javascript:;">
@@ -365,8 +91,7 @@
                                 <a class="dropdown-item" href="javascript:;">
                                     <div class="d-flex align-items-center">
                                         <div class="notify bg-light-success text-success">
-                                            <img src="assets/images/app/outlook.png" width="25"
-                                                alt="user avatar">
+                                            <img src="assets/images/app/outlook.png" width="25" alt="user avatar">
                                         </div>
                                         <div class="flex-grow-1">
                                             <h6 class="msg-name">Account Created<span class="msg-time float-end">28
@@ -381,8 +106,8 @@
                                         <div class="notify bg-light-info text-info">Ss
                                         </div>
                                         <div class="flex-grow-1">
-                                            <h6 class="msg-name">New Product Approved <span
-                                                    class="msg-time float-end">2 hrs ago</span></h6>
+                                            <h6 class="msg-name">New Product Approved <span class="msg-time float-end">2
+                                                    hrs ago</span></h6>
                                             <p class="msg-info">Your new product has approved</p>
                                         </div>
                                     </div>
