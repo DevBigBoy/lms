@@ -62,4 +62,11 @@ class AdminController extends Controller
     $notification = array('message' => 'Admin Profile Updated Successfully', "alert-type" => "success");
     return redirect()->back()->with($notification);
   }
+
+  public function AdminChangePassword()
+  {
+    $id = Auth::user()->id;
+    $user = User::find($id);
+    return view('admin.admin_change_password', compact('user'));
+  }
 }
