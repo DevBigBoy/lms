@@ -7,6 +7,8 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Http\RedirectResponse;
 
+use function PHPSTORM_META\type;
+
 class AdminController extends Controller
 {
 
@@ -50,12 +52,14 @@ class AdminController extends Controller
 
     if ($request->file('photo')) {
       $file = $request->file('photo');
+      @unlink(public_path('upload/admin_images/' . $data->photo));
       $filename = date('YmdHi') . $file->getClientOriginalName();
-      $file->move(public_path('/upload/admin_images'), $filename);
+      $file->move(public_path('upload/admin_images'), $filename);
       $data['photo'] = $filename;
     }
     $data->save();
 
-    return redirect()->back();
+    $notification = array('message' => 'Admin Profile Updated Successfully', "alert-type" => "success");
+    return redirect()->back()->with($notification);
   }
 }
