@@ -27,7 +27,8 @@
                 <div class="row">
                     <div class="col-lg-8">
                         <div class="card p-3">
-                            <form action="{{ route('admin.profile.store') }}" method="POST" enctype="multipart/form-data">
+                            <form action="{{ route('admin.password.update') }}" method="POST"
+                                enctype="multipart/form-data">
                                 @csrf
                                 <div class="card-body">
                                     <div class="row mb-3">
@@ -52,11 +53,11 @@
                                         </div>
                                         <div class="col-sm-9 text-secondary">
                                             <input type="password"
-                                                class="form-control @error('new_password')
+                                                class="form-control @error('password')
                                             is-invalid
                                           @enderror"
-                                                name="new_password" id="new_password" />
-                                            @error('new_password')
+                                                name="password" id="password" />
+                                            @error('password')
                                                 <span class="text-danger">{{ $message }}</span>
                                             @enderror
                                         </div>
@@ -67,8 +68,8 @@
                                             <h6 class="mb-0">Confirm Password</h6>
                                         </div>
                                         <div class="col-sm-9 text-secondary">
-                                            <input type="password" class="form-control " name="confirmed_password"
-                                                id="confirmed_password" />
+                                            <input type="password" class="form-control " name="password_confirmation"
+                                                id="password_confirmation" />
 
                                         </div>
                                     </div>
