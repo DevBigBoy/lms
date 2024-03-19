@@ -1,6 +1,6 @@
-@extends('admin.admin_dashboard')
+@extends('instructor.instructor_dashboard')
 
-@section('admin')
+@section('instructor')
     <div class="page-content">
         <!--breadcrumb-->
         <div class="page-breadcrumb d-none d-sm-flex align-items-center mb-3">
@@ -29,7 +29,7 @@
                         <div class="card">
                             <div class="card-body">
                                 <div class="d-flex flex-column align-items-center text-center">
-                                    <img src="{{ !empty($profileData->photo) ? url('upload/admin_images/' . $profileData->photo) : url('upload/no_image.jpg') }}"
+                                    <img src="{{ !empty($profileData->photo) ? url('upload/instructor_images/' . $profileData->photo) : url('upload/no_image.jpg') }}"
                                         alt="Admin" class="rounded-circle p-1 bg-primary" width="110">
                                     <div class="mt-3">
                                         <h4> {{ $profileData->name }}</h4>
@@ -47,7 +47,8 @@
 
                     <div class="col-lg-8">
                         <div class="card">
-                            <form action="{{ route('admin.profile.store') }}" method="POST" enctype="multipart/form-data">
+                            <form action="{{ route('instructor.profile.store') }}" method="POST"
+                                enctype="multipart/form-data">
                                 @csrf
                                 <div class="card-body">
                                     <div class="row mb-3">
@@ -108,7 +109,7 @@
                                             <h6 class="mb-0"></h6>
                                         </div>
                                         <div class="col-sm-9 text-secondary">
-                                            <img src="{{ !empty($profileData->photo) ? url('upload/admin_images/' . $profileData->photo) : url('upload/no_image.jpg') }}"
+                                            <img src="{{ !empty($profileData->photo) ? url('upload/instructor_images/' . $profileData->photo) : url('upload/no_image.jpg') }}"
                                                 alt="Admin" class="rounded-circle p-1 bg-primary" width="80"
                                                 id="showImage">
                                         </div>

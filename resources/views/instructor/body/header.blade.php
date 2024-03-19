@@ -374,7 +374,7 @@
             <div class="user-box dropdown px-3">
                 <a class="d-flex align-items-center nav-link dropdown-toggle gap-3 dropdown-toggle-nocaret"
                     href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    <img src="{{ !empty(Auth::user()->photo) ? url('upload/admin_images/' . Auth::user()->photo) : url('upload/no_image.jpg') }}"
+                    <img src="{{ !empty(Auth::user()->photo) ? url('upload/instructor_images/' . Auth::user()->photo) : url('upload/no_image.jpg') }}"
                         class="user-img" alt="user avatar">
                     <div class="user-info">
                         <p class="user-name mb-0">{{ Auth::user()->name }}</p>
@@ -383,7 +383,7 @@
                 </a>
                 <ul class="dropdown-menu dropdown-menu-end">
                     <li>
-                        <a class="dropdown-item d-flex align-items-center" href="{{ route('admin.profile') }}">
+                        <a class="dropdown-item d-flex align-items-center" href="{{ route('instructor.profile') }}">
                             <i class="bx bx-user fs-5"></i><span>Profile</span>
                         </a>
                     </li>
