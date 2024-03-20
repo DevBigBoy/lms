@@ -5,7 +5,9 @@ namespace App\Http\Controllers;
 use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Hash;
 use Illuminate\Http\RedirectResponse;
+use Illuminate\Validation\Rules\Password;
 
 class InstructorController extends Controller
 {
@@ -23,7 +25,7 @@ class InstructorController extends Controller
 
     $request->session()->regenerateToken();
 
-    return redirect('/admin/login');
+    return redirect('/instructor/login');
   }
 
   public function InstructorLogin()
@@ -63,6 +65,36 @@ class InstructorController extends Controller
     $data->save();
 
     $notification = array('message' => 'Instructor Profile Updated Successfully', "alert-type" => "success");
+    return redirect()->back()->with($notification);
+  }
+
+  public function InstructorChangePassword()
+  {
+    $id = Auth::user()->id;
+    $user = User::find($id);
+    return view('instructor.instructor_change_password', compact('user'));
+  }
+
+  public function InstructorPasswordUpdate(Request $request)
+  {
+    // validation
+    $validated = $request->validate([
+      'current_password' => ['required', 'current_password'],
+      'password' => ['required', Password::defaults(), 'confirmed'],
+    ]);
+
+    if (!Hash::check($request->current_password, auth::user()->password)) {
+      $notification = array('message' => 'current password does not match', "alert-type" => "error");
+      return redirect()->back()->with($notification);
+    }
+
+
+    // update new password
+    $request->user()->update([
+      'password' => Hash::make($validated['password']),
+    ]);
+
+    $notification = array('message' => 'password updated successfully', "alert-type" => "success");
     return redirect()->back()->with($notification);
   }
 }

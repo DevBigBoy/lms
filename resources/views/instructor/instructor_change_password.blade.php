@@ -1,6 +1,6 @@
-@extends('admin.admin_dashboard')
+@extends('instructor.instructor_dashboard')
 
-@section('admin')
+@section('instructor')
     <div class="page-content">
         <!--breadcrumb-->
         <div class="page-breadcrumb d-none d-sm-flex align-items-center mb-3">
@@ -27,7 +27,7 @@
                 <div class="row">
                     <div class="col-lg-8">
                         <div class="card p-3">
-                            <form action="{{ route('admin.password.update') }}" method="POST"
+                            <form action="{{ route('instructor.password.update') }}" method="POST"
                                 enctype="multipart/form-data">
                                 @csrf
                                 <div class="card-body">
