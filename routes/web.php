@@ -17,9 +17,11 @@ use App\Http\Controllers\InstructorController;
 |
 */
 
-Route::get('/', function () {
-  return view('frontend.index')->name('home');
-});
+// Route::get('/', function () {
+//   return view('frontend.index')->name('home');
+// });
+
+Route::get('/', [UserController::class, 'index'])->name('home');
 
 Route::get('/dashboard', function () {
   return view('dashboard');
