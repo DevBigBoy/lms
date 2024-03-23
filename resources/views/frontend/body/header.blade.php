@@ -44,11 +44,11 @@
                             class="generic-list-item d-flex flex-wrap align-items-center fs-14 border-left border-left-gray pl-3 ml-3">
                             <li class="d-flex align-items-center pr-3 mr-3 border-right border-right-gray">
                                 <i class="la la-sign-in mr-1"></i>
-                                <a href="login.html"> Login</a>
+                                <a href="{{ route('login') }}"> Login</a>
                             </li>
                             <li class="d-flex align-items-center">
                                 <i class="la la-user mr-1"></i>
-                                <a href="sign-up.html">Register</a>
+                                <a href="{{ route('register') }}">Register</a>
                             </li>
                         </ul>
                     </div><!-- end header-widget -->
@@ -63,8 +63,8 @@
                 <div class="row align-items-center">
                     <div class="col-lg-2">
                         <div class="logo-box">
-                            <a href="{{ route('home') }}" class="logo"><img src="{{ asset('frontend/images/logo.png') }}"
-                                    alt="logo"></a>
+                            <a href="{{ route('home') }}" class="logo"><img
+                                    src="{{ asset('frontend/images/logo.png') }}" alt="logo"></a>
                             <div class="user-btn-action">
                                 <div class="search-menu-toggle icon-element icon-element-sm shadow-sm mr-2"
                                     data-toggle="tooltip" data-placement="top" title="Search">
