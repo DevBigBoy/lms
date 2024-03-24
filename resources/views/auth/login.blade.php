@@ -13,7 +13,6 @@
                 <ul
                     class="generic-list-item generic-list-item-white generic-list-item-arrow d-flex flex-wrap align-items-center">
                     <li><a href="{{ route('home') }}">Home</a></li>
-                    <li>Pages</li>
                     <li>Login</li>
                 </ul>
             </div><!-- end breadcrumb-content -->
